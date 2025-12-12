@@ -209,12 +209,13 @@
         If you want to hide the information then you should enable this -->
     <bool name="hide_missing_app_count">false</bool>
 
-    <!-- Method to use for icon request. Value can be "email" or "pacific".
+    <!-- Method to use for icon request. Value can be "email", "pacific", or "custom".
         `email` -> Sends icon requests using email
         `pacific` -> Sends icon requests using Pacific Manager
+        `custom` -> Sends icon requests using custom IconRequestHandler
 
         You can leave "premium_request_method" empty to use the regular request's method to send premium icon requests. -->
-    <string name="regular_request_method">email</string>
+    <string name="regular_request_method">custom</string>
     <string name="premium_request_method"></string>
 
     <!-- Email to use when sending icon requests.
@@ -231,6 +232,13 @@
         You can leave "premium_request_pacific_api_key" empty to use the regular request's pacific api key to send premium icon requests. -->
     <string name="regular_request_pacific_api_key"></string>
     <string name="premium_request_pacific_api_key"></string>
+
+    <!-- Statistics Service Configuration.
+        Used when regular_request_method is set to "custom".
+        statistics_service_endpoint: The base URL of your statistics service
+        statistics_service_token: Your access token for the statistics service (required) -->
+    <string name="statistics_service_endpoint">https://apptracker.sg.butanediol.me</string>
+    <string name="statistics_service_token">YOUR_ACCESS_TOKEN_HERE</string>
 
 
     <!--

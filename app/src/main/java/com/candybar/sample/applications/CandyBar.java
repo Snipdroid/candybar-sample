@@ -43,6 +43,11 @@ public class CandyBar extends CandyBarApplication {
         });
         */
 
+        // Enable statistics service
+        // Configure endpoint and token in res/values/dashboard_configurations.xml
+        // and set regular_request_method to "custom"
+        configuration.setIconRequestHandler(new candybar.lib.helpers.StatisticsRequestHandler(this));
+
         configuration.setGenerateAppFilter(true);
         configuration.setGenerateAppMap(true);
         configuration.setGenerateThemeResources(true);

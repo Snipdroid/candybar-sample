@@ -53,10 +53,13 @@ dependencies {
      * If you've missed some versions you've to also follow update guide for those versions
      */
 
-    implementation 'com.github.zixpo:candybar:3.22.2'
+    // Using Snipdroid fork with statistics service integration
+    // For multi-module projects, specify the module name after the repo
+    implementation 'com.github.Snipdroid:candybar:main-SNAPSHOT'
 
-    // TODO: Remove `//` below to enable OneSignal
-    //implementation 'com.onesignal:OneSignal:[5.0.0, 5.99.99]'
+    // For production after release:
+    // implementation 'com.github.Snipdroid.candybar:library:VERSION'
+
 }
 
 // Code for automatically copying appfilter.xml and drawable.xml
